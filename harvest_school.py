@@ -166,6 +166,15 @@ def parse_feed(raw, src):
         stamp = parse_date(text_of(child(n, "pubDate", "published", "updated", "date")))
         snippet = text_of(child(n, "description", "summary", "content"))[:SNIPPET_CHARS]
 
+        # Google News descriptions are usually the headline with the publisher's
+        # name tacked on the end. That name is not part of the story, and it was
+        # being read as geography: "The Guardian Nigeria News" placed a piece
+        # about UK social mobility in Nigeria. Strip the publisher before the
+        # text is ever classified or placed.
+        for tail in (outlet, src["name"].replace("Google News \u00b7 ", "")):
+            if tail and len(tail) > 3 and snippet.endswith(tail):
+                snippet = snippet[: -len(tail)].strip(" -\u2013\u2014\u00b7|,")
+
         out.append({
             "t": title,
             "u": link,
@@ -403,7 +412,7 @@ GEO3 = [
      ("ua","Ukraine",["ukraine","crimean tatars","krym"]),
      ("ru","Russia (European)",["russia","russian federation"]),
      ("eu","European Union",["european union","european commission","brussels"]),
-     ("uk","United Kingdom",["united kingdom","britain","scotland","wales"]),
+     ("uk","United Kingdom",["united kingdom","britain","scotland","wales","england","u.k.","uk"]),
      ("es","Spain",["spain","spanish"]),
      ("fr","France",["france","french"]),
      ("de","Germany",["germany","german"]),
@@ -678,6 +687,20 @@ TOPICS = [
         ("disability", ["school", "education", "excluded", "provision", "support"]),
         ("girls education", []), ("refugee education", []),
         ("attainment gap", []), ("funding cuts", ["school", "education", "university"]),
+        # Schooling disrupted rather than withheld. The section's own line about
+        # children on a dying planet belongs here: a school that floods, burns or
+        # closes keeps people out as surely as a fee does. Every term is gated
+        # behind a schooling word, so a climate story that merely quotes a
+        # professor cannot reach it.
+        ("education in emergencies", []), ("school infrastructure", []),
+        ("learning loss", []), ("school meals", ["cut", "free", "expansion", "campaign"]),
+        ("education system", ["climate", "resilient", "resilience", "disaster", "emergency", "rebuild"]),
+        ("schools", ["climate", "flood", "heatwave", "wildfire", "disaster",
+                     "closed by", "damaged", "destroyed", "rebuilt", "displaced"]),
+        ("school", ["climate risk", "flood", "heatwave", "wildfire", "disaster",
+                    "closed by", "damaged", "destroyed", "rebuilt", "displaced"]),
+        ("classroom", ["heat", "flood", "overcrowded", "temporary", "damaged"]),
+        ("children", ["out of school", "displaced", "denied education", "cannot attend"]),
     ]),
     ("alternatives", "Learning outside the system", [
         ("homeschool", []), ("home education", []), ("microschool", []),
@@ -692,27 +715,30 @@ TOPICS = [
 ]
 
 ANCHOR = [
-    # Schooling-as-a-system language. A sports result, a prize day or an
-    # ordinary campus notice is not this subject; how school is owned,
-    # governed, priced, standardised or contracted out is.
+    # Supporting terms only. Since relevant() now requires a subject to claim
+    # the story, this list no longer admits anything on its own — but terms
+    # that belong to other wires were removed anyway, so nothing here can prop
+    # up a marginal match. "fossil fuel", "endowment", "divestment",
+    # "research funding", "workforce", "procurement" and "apprenticeship" came
+    # out: each of them is ordinary vocabulary in climate, business and labour
+    # reporting, and each appears in its own subject already, gated behind the
+    # schooling words it must sit beside.
     "education policy", "curriculum reform", "national curriculum", "curriculum control",
     "standardised test", "standardized test", "high-stakes testing", "exam board",
     "textbook", "instructional materials", "education publisher", "curriculum publisher",
     "edtech", "education technology", "learning platform", "learning management system",
-    "student data", "student privacy", "proctoring", "facial recognition",
-    "private equity", "for-profit college", "for-profit university", "diploma mill",
-    "charter school", "academy trust", "voucher", "privatisation", "privatization",
-    "public-private partnership", "school fees", "tuition fees", "student debt",
+    "student data", "student privacy", "proctoring",
+    "for-profit college", "for-profit university", "diploma mill",
+    "charter school", "academy trust", "school voucher", "school privatisation",
+    "school privatization", "school fees", "tuition fees", "student debt",
     "student loan", "credential inflation", "degree requirement",
-    "school funding", "funding cuts", "school closure", "class size",
+    "school funding", "school closure", "class size", "pupil-teacher ratio",
     "teachers union", "teacher strike", "teacher shortage", "academic freedom",
-    "book ban", "banned books", "curriculum ban", "textbook censorship",
-    "endowment", "divestment", "fossil fuel", "research funding",
-    "unesco", "global partnership for education", "multistakeholder", "pisa",
+    "book ban", "curriculum ban", "textbook censorship",
+    "unesco", "global partnership for education", "pisa",
     "out of school", "attainment gap", "mother tongue", "language of instruction",
-    "indigenous knowledge", "residential school", "homeschool", "home education",
-    "school to work", "workforce", "apprenticeship", "accreditation",
-    "procurement", "vendor lock-in", "school district contract",
+    "indigenous education", "residential school", "homeschool", "home education",
+    "school district", "ministry of education", "department for education",
 ]
 
 BLOCK = [
@@ -779,15 +805,18 @@ GEO3_C = [(rid, rlabel, [(sid, slabel, [(pid, plabel, _compile_all(terms))
 
 
 def relevant(text):
-    """The subject table decides. If any subject claims the story — which means
-    a control term matched, since every sector term is gated behind one — it is
-    relevant. The anchor list is the floor beneath that: control language that
-    belongs to no single subject but is unmistakably this wire's business."""
+    """A subject has to claim the story.
+
+    There used to be a second route in: if no subject matched, an anchor term
+    alone was enough, and the story was then filed under a fallback subject.
+    That is how climate and fossil-fuel stories with no schooling content
+    arrived labelled "Privatisation of public schooling" — the anchor matched,
+    no subject did, and the fallback put a name on it anyway. A story no
+    subject will claim is not this wire's business, so it is refused and
+    counted as refused rather than mislabelled."""
     if hit(text, BLOCK_C):
         return False
-    if topics_for(text):
-        return True
-    return hit(text, ANCHOR_C)
+    return bool(topics_for(text))
 
 
 def weight(text, standing, placed):
@@ -1440,10 +1469,12 @@ def run(dry_run=False, fixtures=None):
                     refused += 1
                     continue
                 if not relevant(text):
+                    stat["refused"] += 1
+                    refused += 1
                     continue
                 regions, subs, places = places_for(text)
                 total, reasons = weight(text, src["standing"], regions != ["unlocated"])
-                row["x"] = topics_for(text) or ["privatisation"]
+                row["x"] = topics_for(text)
                 row["w"] = regions
                 row["sr"] = subs
                 row["pl"] = places
