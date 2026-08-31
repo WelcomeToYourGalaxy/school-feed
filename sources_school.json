@@ -1,0 +1,1490 @@
+{
+  "_note": [
+    "Sources for the school wire.",
+    "",
+    "direct: feeds proven working in the sibling Welcome to Your Galaxy repos.",
+    "  Nothing here was guessed. A feed URL that cannot be tested is not added,",
+    "  because an untested guess reports itself unreachable on every harvest and",
+    "  quietly makes the coverage figure a lie.",
+    "",
+    "gnews: Google News locale searches. The URL is built by the harvester from",
+    "  hl / gl / ceid, so these need no separate verification. Queries rotate so",
+    "  the whole subject range is covered rather than one theme repeated.",
+    "",
+    "events: subject searches for the institutions and companies the School",
+    "  section names but which have no verified feed in this build — UNESCO, the",
+    "  Global Partnership for Education, the publishers, the private equity owners.",
+    "",
+    "standing is provenance, not importance:",
+    "  official  ministries, inspectorates, courts, UN bodies, the OECD, the World Bank",
+    "  research  institutes, education data, investigative research",
+    "  press     general news across the locales",
+    "  rights    unions, privacy and campaigning organisations",
+    "",
+    "To add a source: put it in direct with a feed URL you have actually opened."
+  ],
+  "direct": [
+    {
+      "name": "OECD",
+      "lang": "en",
+      "standing": "official",
+      "url": "https://www.oecd.org/newsroom/index.xml"
+    },
+    {
+      "name": "World Bank",
+      "lang": "en",
+      "standing": "official",
+      "url": "https://www.worldbank.org/en/news/all?format=rss"
+    },
+    {
+      "name": "Tax Justice Network",
+      "lang": "en",
+      "standing": "research",
+      "url": "https://taxjustice.net/feed/"
+    },
+    {
+      "name": "Transnational Institute",
+      "lang": "en",
+      "standing": "rights",
+      "url": "https://www.tni.org/en/rss.xml"
+    },
+    {
+      "name": "Corporate Europe Observatory",
+      "lang": "en",
+      "standing": "rights",
+      "url": "https://corporateeurope.org/en/rss.xml"
+    },
+    {
+      "name": "Privacy International",
+      "lang": "en",
+      "standing": "rights",
+      "url": "https://privacyinternational.org/rss.xml"
+    },
+    {
+      "name": "Electronic Frontier Foundation",
+      "lang": "en",
+      "standing": "rights",
+      "url": "https://www.eff.org/rss/updates.xml"
+    },
+    {
+      "name": "EDRi",
+      "lang": "en",
+      "standing": "rights",
+      "url": "https://edri.org/feed/"
+    },
+    {
+      "name": "Access Now",
+      "lang": "en",
+      "standing": "rights",
+      "url": "https://www.accessnow.org/feed/"
+    },
+    {
+      "name": "Statewatch",
+      "lang": "en",
+      "standing": "rights",
+      "url": "https://www.statewatch.org/rss/"
+    },
+    {
+      "name": "Human Rights Watch",
+      "lang": "en",
+      "standing": "rights",
+      "url": "https://www.hrw.org/rss/news"
+    },
+    {
+      "name": "Amnesty International",
+      "lang": "en",
+      "standing": "rights",
+      "url": "https://www.amnesty.org/en/rss/"
+    }
+  ],
+  "gnews": [
+    {
+      "label": "English (US) 1",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "\"education policy\" OR \"curriculum reform\" OR \"national curriculum\""
+    },
+    {
+      "label": "English (US) 2",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "\"school privatisation\" OR \"school privatization\" OR \"charter school\" OR \"academy trust\""
+    },
+    {
+      "label": "English (US) 3",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "\"private equity\" education OR school OR university"
+    },
+    {
+      "label": "English (UK) 4",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-GB",
+      "gl": "GB",
+      "ceid": "GB:en-GB",
+      "query": "\"student data\" OR \"student privacy\" OR \"edtech\" privacy"
+    },
+    {
+      "label": "English (UK) 5",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-GB",
+      "gl": "GB",
+      "ceid": "GB:en-GB",
+      "query": "\"student debt\" OR \"tuition fees\" OR \"student loan\""
+    },
+    {
+      "label": "English (UK) 6",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-GB",
+      "gl": "GB",
+      "ceid": "GB:en-GB",
+      "query": "\"for-profit college\" OR \"diploma mill\" OR accreditation revoked"
+    },
+    {
+      "label": "English (India) 7",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-IN",
+      "gl": "IN",
+      "ceid": "IN:en",
+      "query": "\"textbook\" publisher OR monopoly OR price OR censorship"
+    },
+    {
+      "label": "English (India) 8",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-IN",
+      "gl": "IN",
+      "ceid": "IN:en",
+      "query": "\"teacher strike\" OR \"teachers union\" OR \"teacher shortage\""
+    },
+    {
+      "label": "English (India) 9",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-IN",
+      "gl": "IN",
+      "ceid": "IN:en",
+      "query": "\"book ban\" school OR library OR classroom"
+    },
+    {
+      "label": "English (Nigeria) 10",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-NG",
+      "gl": "NG",
+      "ceid": "NG:en",
+      "query": "\"school closure\" OR \"school funding\" cuts"
+    },
+    {
+      "label": "English (Nigeria) 11",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-NG",
+      "gl": "NG",
+      "ceid": "NG:en",
+      "query": "\"standardised testing\" OR \"standardized testing\" OR \"high-stakes testing\""
+    },
+    {
+      "label": "English (Nigeria) 12",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-NG",
+      "gl": "NG",
+      "ceid": "NG:en",
+      "query": "\"out of school children\" OR \"attainment gap\" OR \"enrolment gap\""
+    },
+    {
+      "label": "English (South Africa) 13",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-ZA",
+      "gl": "ZA",
+      "ceid": "ZA:en",
+      "query": "\"mother tongue\" education OR \"language of instruction\""
+    },
+    {
+      "label": "English (South Africa) 14",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-ZA",
+      "gl": "ZA",
+      "ceid": "ZA:en",
+      "query": "\"artificial intelligence\" classroom OR teaching OR grading"
+    },
+    {
+      "label": "English (South Africa) 15",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-ZA",
+      "gl": "ZA",
+      "ceid": "ZA:en",
+      "query": "\"university endowment\" OR divestment OR \"fossil fuel\" university"
+    },
+    {
+      "label": "English (Australia) 16",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-AU",
+      "gl": "AU",
+      "ceid": "AU:en",
+      "query": "\"school vouchers\" OR \"public funds\" private school"
+    },
+    {
+      "label": "English (Australia) 17",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-AU",
+      "gl": "AU",
+      "ceid": "AU:en",
+      "query": "\"academic freedom\" OR \"curriculum ban\" OR \"teaching restricted\""
+    },
+    {
+      "label": "English (Australia) 18",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-AU",
+      "gl": "AU",
+      "ceid": "AU:en",
+      "query": "\"edtech contract\" OR \"school district contract\" OR procurement school"
+    },
+    {
+      "label": "English (Kenya) 19",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-KE",
+      "gl": "KE",
+      "ceid": "KE:en",
+      "query": "\"indigenous education\" OR \"residential school\" OR \"boarding school\" assimilation"
+    },
+    {
+      "label": "English (Kenya) 20",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-KE",
+      "gl": "KE",
+      "ceid": "KE:en",
+      "query": "\"homeschooling\" OR \"home education\" regulation OR growth"
+    },
+    {
+      "label": "English (Kenya) 21",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-KE",
+      "gl": "KE",
+      "ceid": "KE:en",
+      "query": "\"credential inflation\" OR \"degree requirement\" employers"
+    },
+    {
+      "label": "English (Philippines) 22",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-PH",
+      "gl": "PH",
+      "ceid": "PH:en",
+      "query": "\"elite university\" pipeline OR admissions OR \"legacy admissions\""
+    },
+    {
+      "label": "English (Philippines) 23",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-PH",
+      "gl": "PH",
+      "ceid": "PH:en",
+      "query": "\"school fees\" abolish OR barrier OR burden"
+    },
+    {
+      "label": "English (Philippines) 24",
+      "lang": "en",
+      "standing": "press",
+      "hl": "en-PH",
+      "gl": "PH",
+      "ceid": "PH:en",
+      "query": "\"class size\" OR \"pupil-teacher ratio\""
+    },
+    {
+      "label": "Spanish (Spain) 25",
+      "lang": "es",
+      "standing": "press",
+      "hl": "es",
+      "gl": "ES",
+      "ceid": "ES:es",
+      "query": "\"education policy\" OR \"curriculum reform\" OR \"national curriculum\""
+    },
+    {
+      "label": "Spanish (Spain) 26",
+      "lang": "es",
+      "standing": "press",
+      "hl": "es",
+      "gl": "ES",
+      "ceid": "ES:es",
+      "query": "\"school privatisation\" OR \"school privatization\" OR \"charter school\" OR \"academy trust\""
+    },
+    {
+      "label": "Spanish (Spain) 27",
+      "lang": "es",
+      "standing": "press",
+      "hl": "es",
+      "gl": "ES",
+      "ceid": "ES:es",
+      "query": "\"private equity\" education OR school OR university"
+    },
+    {
+      "label": "Spanish (Mexico) 28",
+      "lang": "es",
+      "standing": "press",
+      "hl": "es-419",
+      "gl": "MX",
+      "ceid": "MX:es-419",
+      "query": "\"student data\" OR \"student privacy\" OR \"edtech\" privacy"
+    },
+    {
+      "label": "Spanish (Mexico) 29",
+      "lang": "es",
+      "standing": "press",
+      "hl": "es-419",
+      "gl": "MX",
+      "ceid": "MX:es-419",
+      "query": "\"student debt\" OR \"tuition fees\" OR \"student loan\""
+    },
+    {
+      "label": "Spanish (Mexico) 30",
+      "lang": "es",
+      "standing": "press",
+      "hl": "es-419",
+      "gl": "MX",
+      "ceid": "MX:es-419",
+      "query": "\"for-profit college\" OR \"diploma mill\" OR accreditation revoked"
+    },
+    {
+      "label": "Spanish (Argentina) 31",
+      "lang": "es",
+      "standing": "press",
+      "hl": "es-419",
+      "gl": "AR",
+      "ceid": "AR:es-419",
+      "query": "\"textbook\" publisher OR monopoly OR price OR censorship"
+    },
+    {
+      "label": "Spanish (Argentina) 32",
+      "lang": "es",
+      "standing": "press",
+      "hl": "es-419",
+      "gl": "AR",
+      "ceid": "AR:es-419",
+      "query": "\"teacher strike\" OR \"teachers union\" OR \"teacher shortage\""
+    },
+    {
+      "label": "Spanish (Argentina) 33",
+      "lang": "es",
+      "standing": "press",
+      "hl": "es-419",
+      "gl": "AR",
+      "ceid": "AR:es-419",
+      "query": "\"book ban\" school OR library OR classroom"
+    },
+    {
+      "label": "Spanish (Colombia) 34",
+      "lang": "es",
+      "standing": "press",
+      "hl": "es-419",
+      "gl": "CO",
+      "ceid": "CO:es-419",
+      "query": "\"school closure\" OR \"school funding\" cuts"
+    },
+    {
+      "label": "Spanish (Colombia) 35",
+      "lang": "es",
+      "standing": "press",
+      "hl": "es-419",
+      "gl": "CO",
+      "ceid": "CO:es-419",
+      "query": "\"standardised testing\" OR \"standardized testing\" OR \"high-stakes testing\""
+    },
+    {
+      "label": "Spanish (Colombia) 36",
+      "lang": "es",
+      "standing": "press",
+      "hl": "es-419",
+      "gl": "CO",
+      "ceid": "CO:es-419",
+      "query": "\"out of school children\" OR \"attainment gap\" OR \"enrolment gap\""
+    },
+    {
+      "label": "French (France) 37",
+      "lang": "fr",
+      "standing": "press",
+      "hl": "fr",
+      "gl": "FR",
+      "ceid": "FR:fr",
+      "query": "\"mother tongue\" education OR \"language of instruction\""
+    },
+    {
+      "label": "French (France) 38",
+      "lang": "fr",
+      "standing": "press",
+      "hl": "fr",
+      "gl": "FR",
+      "ceid": "FR:fr",
+      "query": "\"artificial intelligence\" classroom OR teaching OR grading"
+    },
+    {
+      "label": "French (France) 39",
+      "lang": "fr",
+      "standing": "press",
+      "hl": "fr",
+      "gl": "FR",
+      "ceid": "FR:fr",
+      "query": "\"university endowment\" OR divestment OR \"fossil fuel\" university"
+    },
+    {
+      "label": "French (Senegal) 40",
+      "lang": "fr",
+      "standing": "press",
+      "hl": "fr",
+      "gl": "SN",
+      "ceid": "SN:fr",
+      "query": "\"school vouchers\" OR \"public funds\" private school"
+    },
+    {
+      "label": "French (Senegal) 41",
+      "lang": "fr",
+      "standing": "press",
+      "hl": "fr",
+      "gl": "SN",
+      "ceid": "SN:fr",
+      "query": "\"academic freedom\" OR \"curriculum ban\" OR \"teaching restricted\""
+    },
+    {
+      "label": "French (Senegal) 42",
+      "lang": "fr",
+      "standing": "press",
+      "hl": "fr",
+      "gl": "SN",
+      "ceid": "SN:fr",
+      "query": "\"edtech contract\" OR \"school district contract\" OR procurement school"
+    },
+    {
+      "label": "French (Canada) 43",
+      "lang": "fr",
+      "standing": "press",
+      "hl": "fr",
+      "gl": "CA",
+      "ceid": "CA:fr",
+      "query": "\"indigenous education\" OR \"residential school\" OR \"boarding school\" assimilation"
+    },
+    {
+      "label": "French (Canada) 44",
+      "lang": "fr",
+      "standing": "press",
+      "hl": "fr",
+      "gl": "CA",
+      "ceid": "CA:fr",
+      "query": "\"homeschooling\" OR \"home education\" regulation OR growth"
+    },
+    {
+      "label": "French (Canada) 45",
+      "lang": "fr",
+      "standing": "press",
+      "hl": "fr",
+      "gl": "CA",
+      "ceid": "CA:fr",
+      "query": "\"credential inflation\" OR \"degree requirement\" employers"
+    },
+    {
+      "label": "Portuguese (Brazil) 46",
+      "lang": "pt",
+      "standing": "press",
+      "hl": "pt-BR",
+      "gl": "BR",
+      "ceid": "BR:pt-419",
+      "query": "\"elite university\" pipeline OR admissions OR \"legacy admissions\""
+    },
+    {
+      "label": "Portuguese (Brazil) 47",
+      "lang": "pt",
+      "standing": "press",
+      "hl": "pt-BR",
+      "gl": "BR",
+      "ceid": "BR:pt-419",
+      "query": "\"school fees\" abolish OR barrier OR burden"
+    },
+    {
+      "label": "Portuguese (Brazil) 48",
+      "lang": "pt",
+      "standing": "press",
+      "hl": "pt-BR",
+      "gl": "BR",
+      "ceid": "BR:pt-419",
+      "query": "\"class size\" OR \"pupil-teacher ratio\""
+    },
+    {
+      "label": "Portuguese (Portugal) 49",
+      "lang": "pt",
+      "standing": "press",
+      "hl": "pt-PT",
+      "gl": "PT",
+      "ceid": "PT:pt-150",
+      "query": "\"education policy\" OR \"curriculum reform\" OR \"national curriculum\""
+    },
+    {
+      "label": "Portuguese (Portugal) 50",
+      "lang": "pt",
+      "standing": "press",
+      "hl": "pt-PT",
+      "gl": "PT",
+      "ceid": "PT:pt-150",
+      "query": "\"school privatisation\" OR \"school privatization\" OR \"charter school\" OR \"academy trust\""
+    },
+    {
+      "label": "Portuguese (Portugal) 51",
+      "lang": "pt",
+      "standing": "press",
+      "hl": "pt-PT",
+      "gl": "PT",
+      "ceid": "PT:pt-150",
+      "query": "\"private equity\" education OR school OR university"
+    },
+    {
+      "label": "Portuguese (Angola) 52",
+      "lang": "pt",
+      "standing": "press",
+      "hl": "pt-PT",
+      "gl": "AO",
+      "ceid": "AO:pt-150",
+      "query": "\"student data\" OR \"student privacy\" OR \"edtech\" privacy"
+    },
+    {
+      "label": "Portuguese (Angola) 53",
+      "lang": "pt",
+      "standing": "press",
+      "hl": "pt-PT",
+      "gl": "AO",
+      "ceid": "AO:pt-150",
+      "query": "\"student debt\" OR \"tuition fees\" OR \"student loan\""
+    },
+    {
+      "label": "Portuguese (Angola) 54",
+      "lang": "pt",
+      "standing": "press",
+      "hl": "pt-PT",
+      "gl": "AO",
+      "ceid": "AO:pt-150",
+      "query": "\"for-profit college\" OR \"diploma mill\" OR accreditation revoked"
+    },
+    {
+      "label": "German (Germany) 55",
+      "lang": "de",
+      "standing": "press",
+      "hl": "de",
+      "gl": "DE",
+      "ceid": "DE:de",
+      "query": "\"textbook\" publisher OR monopoly OR price OR censorship"
+    },
+    {
+      "label": "German (Germany) 56",
+      "lang": "de",
+      "standing": "press",
+      "hl": "de",
+      "gl": "DE",
+      "ceid": "DE:de",
+      "query": "\"teacher strike\" OR \"teachers union\" OR \"teacher shortage\""
+    },
+    {
+      "label": "German (Germany) 57",
+      "lang": "de",
+      "standing": "press",
+      "hl": "de",
+      "gl": "DE",
+      "ceid": "DE:de",
+      "query": "\"book ban\" school OR library OR classroom"
+    },
+    {
+      "label": "German (Austria) 58",
+      "lang": "de",
+      "standing": "press",
+      "hl": "de",
+      "gl": "AT",
+      "ceid": "AT:de",
+      "query": "\"school closure\" OR \"school funding\" cuts"
+    },
+    {
+      "label": "German (Austria) 59",
+      "lang": "de",
+      "standing": "press",
+      "hl": "de",
+      "gl": "AT",
+      "ceid": "AT:de",
+      "query": "\"standardised testing\" OR \"standardized testing\" OR \"high-stakes testing\""
+    },
+    {
+      "label": "German (Austria) 60",
+      "lang": "de",
+      "standing": "press",
+      "hl": "de",
+      "gl": "AT",
+      "ceid": "AT:de",
+      "query": "\"out of school children\" OR \"attainment gap\" OR \"enrolment gap\""
+    },
+    {
+      "label": "Russian (Russia) 61",
+      "lang": "ru",
+      "standing": "press",
+      "hl": "ru",
+      "gl": "RU",
+      "ceid": "RU:ru",
+      "query": "\"mother tongue\" education OR \"language of instruction\""
+    },
+    {
+      "label": "Russian (Russia) 62",
+      "lang": "ru",
+      "standing": "press",
+      "hl": "ru",
+      "gl": "RU",
+      "ceid": "RU:ru",
+      "query": "\"artificial intelligence\" classroom OR teaching OR grading"
+    },
+    {
+      "label": "Russian (Russia) 63",
+      "lang": "ru",
+      "standing": "press",
+      "hl": "ru",
+      "gl": "RU",
+      "ceid": "RU:ru",
+      "query": "\"university endowment\" OR divestment OR \"fossil fuel\" university"
+    },
+    {
+      "label": "Russian (Kazakhstan) 64",
+      "lang": "ru",
+      "standing": "press",
+      "hl": "ru",
+      "gl": "KZ",
+      "ceid": "KZ:ru",
+      "query": "\"school vouchers\" OR \"public funds\" private school"
+    },
+    {
+      "label": "Russian (Kazakhstan) 65",
+      "lang": "ru",
+      "standing": "press",
+      "hl": "ru",
+      "gl": "KZ",
+      "ceid": "KZ:ru",
+      "query": "\"academic freedom\" OR \"curriculum ban\" OR \"teaching restricted\""
+    },
+    {
+      "label": "Russian (Kazakhstan) 66",
+      "lang": "ru",
+      "standing": "press",
+      "hl": "ru",
+      "gl": "KZ",
+      "ceid": "KZ:ru",
+      "query": "\"edtech contract\" OR \"school district contract\" OR procurement school"
+    },
+    {
+      "label": "Arabic (Egypt) 67",
+      "lang": "ar",
+      "standing": "press",
+      "hl": "ar",
+      "gl": "EG",
+      "ceid": "EG:ar",
+      "query": "\"indigenous education\" OR \"residential school\" OR \"boarding school\" assimilation"
+    },
+    {
+      "label": "Arabic (Egypt) 68",
+      "lang": "ar",
+      "standing": "press",
+      "hl": "ar",
+      "gl": "EG",
+      "ceid": "EG:ar",
+      "query": "\"homeschooling\" OR \"home education\" regulation OR growth"
+    },
+    {
+      "label": "Arabic (Egypt) 69",
+      "lang": "ar",
+      "standing": "press",
+      "hl": "ar",
+      "gl": "EG",
+      "ceid": "EG:ar",
+      "query": "\"credential inflation\" OR \"degree requirement\" employers"
+    },
+    {
+      "label": "Arabic (UAE) 70",
+      "lang": "ar",
+      "standing": "press",
+      "hl": "ar",
+      "gl": "AE",
+      "ceid": "AE:ar",
+      "query": "\"elite university\" pipeline OR admissions OR \"legacy admissions\""
+    },
+    {
+      "label": "Arabic (UAE) 71",
+      "lang": "ar",
+      "standing": "press",
+      "hl": "ar",
+      "gl": "AE",
+      "ceid": "AE:ar",
+      "query": "\"school fees\" abolish OR barrier OR burden"
+    },
+    {
+      "label": "Arabic (UAE) 72",
+      "lang": "ar",
+      "standing": "press",
+      "hl": "ar",
+      "gl": "AE",
+      "ceid": "AE:ar",
+      "query": "\"class size\" OR \"pupil-teacher ratio\""
+    },
+    {
+      "label": "Arabic (Lebanon) 73",
+      "lang": "ar",
+      "standing": "press",
+      "hl": "ar",
+      "gl": "LB",
+      "ceid": "LB:ar",
+      "query": "\"education policy\" OR \"curriculum reform\" OR \"national curriculum\""
+    },
+    {
+      "label": "Arabic (Lebanon) 74",
+      "lang": "ar",
+      "standing": "press",
+      "hl": "ar",
+      "gl": "LB",
+      "ceid": "LB:ar",
+      "query": "\"school privatisation\" OR \"school privatization\" OR \"charter school\" OR \"academy trust\""
+    },
+    {
+      "label": "Arabic (Lebanon) 75",
+      "lang": "ar",
+      "standing": "press",
+      "hl": "ar",
+      "gl": "LB",
+      "ceid": "LB:ar",
+      "query": "\"private equity\" education OR school OR university"
+    },
+    {
+      "label": "Chinese (Mainland) 76",
+      "lang": "zh",
+      "standing": "press",
+      "hl": "zh-CN",
+      "gl": "CN",
+      "ceid": "CN:zh-Hans",
+      "query": "\"student data\" OR \"student privacy\" OR \"edtech\" privacy"
+    },
+    {
+      "label": "Chinese (Mainland) 77",
+      "lang": "zh",
+      "standing": "press",
+      "hl": "zh-CN",
+      "gl": "CN",
+      "ceid": "CN:zh-Hans",
+      "query": "\"student debt\" OR \"tuition fees\" OR \"student loan\""
+    },
+    {
+      "label": "Chinese (Mainland) 78",
+      "lang": "zh",
+      "standing": "press",
+      "hl": "zh-CN",
+      "gl": "CN",
+      "ceid": "CN:zh-Hans",
+      "query": "\"for-profit college\" OR \"diploma mill\" OR accreditation revoked"
+    },
+    {
+      "label": "Chinese (Taiwan) 79",
+      "lang": "zh",
+      "standing": "press",
+      "hl": "zh-TW",
+      "gl": "TW",
+      "ceid": "TW:zh-Hant",
+      "query": "\"textbook\" publisher OR monopoly OR price OR censorship"
+    },
+    {
+      "label": "Chinese (Taiwan) 80",
+      "lang": "zh",
+      "standing": "press",
+      "hl": "zh-TW",
+      "gl": "TW",
+      "ceid": "TW:zh-Hant",
+      "query": "\"teacher strike\" OR \"teachers union\" OR \"teacher shortage\""
+    },
+    {
+      "label": "Chinese (Taiwan) 81",
+      "lang": "zh",
+      "standing": "press",
+      "hl": "zh-TW",
+      "gl": "TW",
+      "ceid": "TW:zh-Hant",
+      "query": "\"book ban\" school OR library OR classroom"
+    },
+    {
+      "label": "Chinese (Hong Kong) 82",
+      "lang": "zh",
+      "standing": "press",
+      "hl": "zh-HK",
+      "gl": "HK",
+      "ceid": "HK:zh-Hant",
+      "query": "\"school closure\" OR \"school funding\" cuts"
+    },
+    {
+      "label": "Chinese (Hong Kong) 83",
+      "lang": "zh",
+      "standing": "press",
+      "hl": "zh-HK",
+      "gl": "HK",
+      "ceid": "HK:zh-Hant",
+      "query": "\"standardised testing\" OR \"standardized testing\" OR \"high-stakes testing\""
+    },
+    {
+      "label": "Chinese (Hong Kong) 84",
+      "lang": "zh",
+      "standing": "press",
+      "hl": "zh-HK",
+      "gl": "HK",
+      "ceid": "HK:zh-Hant",
+      "query": "\"out of school children\" OR \"attainment gap\" OR \"enrolment gap\""
+    },
+    {
+      "label": "Hindi (India) 85",
+      "lang": "hi",
+      "standing": "press",
+      "hl": "hi",
+      "gl": "IN",
+      "ceid": "IN:hi",
+      "query": "\"mother tongue\" education OR \"language of instruction\""
+    },
+    {
+      "label": "Hindi (India) 86",
+      "lang": "hi",
+      "standing": "press",
+      "hl": "hi",
+      "gl": "IN",
+      "ceid": "IN:hi",
+      "query": "\"artificial intelligence\" classroom OR teaching OR grading"
+    },
+    {
+      "label": "Hindi (India) 87",
+      "lang": "hi",
+      "standing": "press",
+      "hl": "hi",
+      "gl": "IN",
+      "ceid": "IN:hi",
+      "query": "\"university endowment\" OR divestment OR \"fossil fuel\" university"
+    },
+    {
+      "label": "Bengali (Bangladesh) 88",
+      "lang": "bn",
+      "standing": "press",
+      "hl": "bn",
+      "gl": "BD",
+      "ceid": "BD:bn",
+      "query": "\"school vouchers\" OR \"public funds\" private school"
+    },
+    {
+      "label": "Bengali (Bangladesh) 89",
+      "lang": "bn",
+      "standing": "press",
+      "hl": "bn",
+      "gl": "BD",
+      "ceid": "BD:bn",
+      "query": "\"academic freedom\" OR \"curriculum ban\" OR \"teaching restricted\""
+    },
+    {
+      "label": "Bengali (Bangladesh) 90",
+      "lang": "bn",
+      "standing": "press",
+      "hl": "bn",
+      "gl": "BD",
+      "ceid": "BD:bn",
+      "query": "\"edtech contract\" OR \"school district contract\" OR procurement school"
+    },
+    {
+      "label": "Indonesian 91",
+      "lang": "id",
+      "standing": "press",
+      "hl": "id",
+      "gl": "ID",
+      "ceid": "ID:id",
+      "query": "\"indigenous education\" OR \"residential school\" OR \"boarding school\" assimilation"
+    },
+    {
+      "label": "Indonesian 92",
+      "lang": "id",
+      "standing": "press",
+      "hl": "id",
+      "gl": "ID",
+      "ceid": "ID:id",
+      "query": "\"homeschooling\" OR \"home education\" regulation OR growth"
+    },
+    {
+      "label": "Indonesian 93",
+      "lang": "id",
+      "standing": "press",
+      "hl": "id",
+      "gl": "ID",
+      "ceid": "ID:id",
+      "query": "\"credential inflation\" OR \"degree requirement\" employers"
+    },
+    {
+      "label": "Japanese 94",
+      "lang": "ja",
+      "standing": "press",
+      "hl": "ja",
+      "gl": "JP",
+      "ceid": "JP:ja",
+      "query": "\"elite university\" pipeline OR admissions OR \"legacy admissions\""
+    },
+    {
+      "label": "Japanese 95",
+      "lang": "ja",
+      "standing": "press",
+      "hl": "ja",
+      "gl": "JP",
+      "ceid": "JP:ja",
+      "query": "\"school fees\" abolish OR barrier OR burden"
+    },
+    {
+      "label": "Japanese 96",
+      "lang": "ja",
+      "standing": "press",
+      "hl": "ja",
+      "gl": "JP",
+      "ceid": "JP:ja",
+      "query": "\"class size\" OR \"pupil-teacher ratio\""
+    },
+    {
+      "label": "Korean 97",
+      "lang": "ko",
+      "standing": "press",
+      "hl": "ko",
+      "gl": "KR",
+      "ceid": "KR:ko",
+      "query": "\"education policy\" OR \"curriculum reform\" OR \"national curriculum\""
+    },
+    {
+      "label": "Korean 98",
+      "lang": "ko",
+      "standing": "press",
+      "hl": "ko",
+      "gl": "KR",
+      "ceid": "KR:ko",
+      "query": "\"school privatisation\" OR \"school privatization\" OR \"charter school\" OR \"academy trust\""
+    },
+    {
+      "label": "Korean 99",
+      "lang": "ko",
+      "standing": "press",
+      "hl": "ko",
+      "gl": "KR",
+      "ceid": "KR:ko",
+      "query": "\"private equity\" education OR school OR university"
+    },
+    {
+      "label": "Turkish 100",
+      "lang": "tr",
+      "standing": "press",
+      "hl": "tr",
+      "gl": "TR",
+      "ceid": "TR:tr",
+      "query": "\"student data\" OR \"student privacy\" OR \"edtech\" privacy"
+    },
+    {
+      "label": "Turkish 101",
+      "lang": "tr",
+      "standing": "press",
+      "hl": "tr",
+      "gl": "TR",
+      "ceid": "TR:tr",
+      "query": "\"student debt\" OR \"tuition fees\" OR \"student loan\""
+    },
+    {
+      "label": "Turkish 102",
+      "lang": "tr",
+      "standing": "press",
+      "hl": "tr",
+      "gl": "TR",
+      "ceid": "TR:tr",
+      "query": "\"for-profit college\" OR \"diploma mill\" OR accreditation revoked"
+    },
+    {
+      "label": "Italian 103",
+      "lang": "it",
+      "standing": "press",
+      "hl": "it",
+      "gl": "IT",
+      "ceid": "IT:it",
+      "query": "\"textbook\" publisher OR monopoly OR price OR censorship"
+    },
+    {
+      "label": "Italian 104",
+      "lang": "it",
+      "standing": "press",
+      "hl": "it",
+      "gl": "IT",
+      "ceid": "IT:it",
+      "query": "\"teacher strike\" OR \"teachers union\" OR \"teacher shortage\""
+    },
+    {
+      "label": "Italian 105",
+      "lang": "it",
+      "standing": "press",
+      "hl": "it",
+      "gl": "IT",
+      "ceid": "IT:it",
+      "query": "\"book ban\" school OR library OR classroom"
+    },
+    {
+      "label": "Dutch 106",
+      "lang": "nl",
+      "standing": "press",
+      "hl": "nl",
+      "gl": "NL",
+      "ceid": "NL:nl",
+      "query": "\"school closure\" OR \"school funding\" cuts"
+    },
+    {
+      "label": "Dutch 107",
+      "lang": "nl",
+      "standing": "press",
+      "hl": "nl",
+      "gl": "NL",
+      "ceid": "NL:nl",
+      "query": "\"standardised testing\" OR \"standardized testing\" OR \"high-stakes testing\""
+    },
+    {
+      "label": "Dutch 108",
+      "lang": "nl",
+      "standing": "press",
+      "hl": "nl",
+      "gl": "NL",
+      "ceid": "NL:nl",
+      "query": "\"out of school children\" OR \"attainment gap\" OR \"enrolment gap\""
+    },
+    {
+      "label": "Polish 109",
+      "lang": "pl",
+      "standing": "press",
+      "hl": "pl",
+      "gl": "PL",
+      "ceid": "PL:pl",
+      "query": "\"mother tongue\" education OR \"language of instruction\""
+    },
+    {
+      "label": "Polish 110",
+      "lang": "pl",
+      "standing": "press",
+      "hl": "pl",
+      "gl": "PL",
+      "ceid": "PL:pl",
+      "query": "\"artificial intelligence\" classroom OR teaching OR grading"
+    },
+    {
+      "label": "Polish 111",
+      "lang": "pl",
+      "standing": "press",
+      "hl": "pl",
+      "gl": "PL",
+      "ceid": "PL:pl",
+      "query": "\"university endowment\" OR divestment OR \"fossil fuel\" university"
+    },
+    {
+      "label": "Swedish 112",
+      "lang": "sv",
+      "standing": "press",
+      "hl": "sv",
+      "gl": "SE",
+      "ceid": "SE:sv",
+      "query": "\"school vouchers\" OR \"public funds\" private school"
+    },
+    {
+      "label": "Swedish 113",
+      "lang": "sv",
+      "standing": "press",
+      "hl": "sv",
+      "gl": "SE",
+      "ceid": "SE:sv",
+      "query": "\"academic freedom\" OR \"curriculum ban\" OR \"teaching restricted\""
+    },
+    {
+      "label": "Swedish 114",
+      "lang": "sv",
+      "standing": "press",
+      "hl": "sv",
+      "gl": "SE",
+      "ceid": "SE:sv",
+      "query": "\"edtech contract\" OR \"school district contract\" OR procurement school"
+    },
+    {
+      "label": "Ukrainian 115",
+      "lang": "uk",
+      "standing": "press",
+      "hl": "uk",
+      "gl": "UA",
+      "ceid": "UA:uk",
+      "query": "\"indigenous education\" OR \"residential school\" OR \"boarding school\" assimilation"
+    },
+    {
+      "label": "Ukrainian 116",
+      "lang": "uk",
+      "standing": "press",
+      "hl": "uk",
+      "gl": "UA",
+      "ceid": "UA:uk",
+      "query": "\"homeschooling\" OR \"home education\" regulation OR growth"
+    },
+    {
+      "label": "Ukrainian 117",
+      "lang": "uk",
+      "standing": "press",
+      "hl": "uk",
+      "gl": "UA",
+      "ceid": "UA:uk",
+      "query": "\"credential inflation\" OR \"degree requirement\" employers"
+    },
+    {
+      "label": "Greek 118",
+      "lang": "el",
+      "standing": "press",
+      "hl": "el",
+      "gl": "GR",
+      "ceid": "GR:el",
+      "query": "\"elite university\" pipeline OR admissions OR \"legacy admissions\""
+    },
+    {
+      "label": "Greek 119",
+      "lang": "el",
+      "standing": "press",
+      "hl": "el",
+      "gl": "GR",
+      "ceid": "GR:el",
+      "query": "\"school fees\" abolish OR barrier OR burden"
+    },
+    {
+      "label": "Greek 120",
+      "lang": "el",
+      "standing": "press",
+      "hl": "el",
+      "gl": "GR",
+      "ceid": "GR:el",
+      "query": "\"class size\" OR \"pupil-teacher ratio\""
+    },
+    {
+      "label": "Persian 121",
+      "lang": "fa",
+      "standing": "press",
+      "hl": "fa",
+      "gl": "IR",
+      "ceid": "IR:fa",
+      "query": "\"education policy\" OR \"curriculum reform\" OR \"national curriculum\""
+    },
+    {
+      "label": "Persian 122",
+      "lang": "fa",
+      "standing": "press",
+      "hl": "fa",
+      "gl": "IR",
+      "ceid": "IR:fa",
+      "query": "\"school privatisation\" OR \"school privatization\" OR \"charter school\" OR \"academy trust\""
+    },
+    {
+      "label": "Persian 123",
+      "lang": "fa",
+      "standing": "press",
+      "hl": "fa",
+      "gl": "IR",
+      "ceid": "IR:fa",
+      "query": "\"private equity\" education OR school OR university"
+    },
+    {
+      "label": "Vietnamese 124",
+      "lang": "vi",
+      "standing": "press",
+      "hl": "vi",
+      "gl": "VN",
+      "ceid": "VN:vi",
+      "query": "\"student data\" OR \"student privacy\" OR \"edtech\" privacy"
+    },
+    {
+      "label": "Vietnamese 125",
+      "lang": "vi",
+      "standing": "press",
+      "hl": "vi",
+      "gl": "VN",
+      "ceid": "VN:vi",
+      "query": "\"student debt\" OR \"tuition fees\" OR \"student loan\""
+    },
+    {
+      "label": "Vietnamese 126",
+      "lang": "vi",
+      "standing": "press",
+      "hl": "vi",
+      "gl": "VN",
+      "ceid": "VN:vi",
+      "query": "\"for-profit college\" OR \"diploma mill\" OR accreditation revoked"
+    },
+    {
+      "label": "Thai 127",
+      "lang": "th",
+      "standing": "press",
+      "hl": "th",
+      "gl": "TH",
+      "ceid": "TH:th",
+      "query": "\"textbook\" publisher OR monopoly OR price OR censorship"
+    },
+    {
+      "label": "Thai 128",
+      "lang": "th",
+      "standing": "press",
+      "hl": "th",
+      "gl": "TH",
+      "ceid": "TH:th",
+      "query": "\"teacher strike\" OR \"teachers union\" OR \"teacher shortage\""
+    },
+    {
+      "label": "Thai 129",
+      "lang": "th",
+      "standing": "press",
+      "hl": "th",
+      "gl": "TH",
+      "ceid": "TH:th",
+      "query": "\"book ban\" school OR library OR classroom"
+    },
+    {
+      "label": "Swahili (Kenya) 130",
+      "lang": "sw",
+      "standing": "press",
+      "hl": "sw",
+      "gl": "KE",
+      "ceid": "KE:sw",
+      "query": "\"school closure\" OR \"school funding\" cuts"
+    },
+    {
+      "label": "Swahili (Kenya) 131",
+      "lang": "sw",
+      "standing": "press",
+      "hl": "sw",
+      "gl": "KE",
+      "ceid": "KE:sw",
+      "query": "\"standardised testing\" OR \"standardized testing\" OR \"high-stakes testing\""
+    },
+    {
+      "label": "Swahili (Kenya) 132",
+      "lang": "sw",
+      "standing": "press",
+      "hl": "sw",
+      "gl": "KE",
+      "ceid": "KE:sw",
+      "query": "\"out of school children\" OR \"attainment gap\" OR \"enrolment gap\""
+    },
+    {
+      "label": "Amharic (Ethiopia) 133",
+      "lang": "am",
+      "standing": "press",
+      "hl": "am",
+      "gl": "ET",
+      "ceid": "ET:am",
+      "query": "\"mother tongue\" education OR \"language of instruction\""
+    },
+    {
+      "label": "Amharic (Ethiopia) 134",
+      "lang": "am",
+      "standing": "press",
+      "hl": "am",
+      "gl": "ET",
+      "ceid": "ET:am",
+      "query": "\"artificial intelligence\" classroom OR teaching OR grading"
+    },
+    {
+      "label": "Amharic (Ethiopia) 135",
+      "lang": "am",
+      "standing": "press",
+      "hl": "am",
+      "gl": "ET",
+      "ceid": "ET:am",
+      "query": "\"university endowment\" OR divestment OR \"fossil fuel\" university"
+    },
+    {
+      "label": "Hausa (Nigeria) 136",
+      "lang": "ha",
+      "standing": "press",
+      "hl": "ha",
+      "gl": "NG",
+      "ceid": "NG:ha",
+      "query": "\"school vouchers\" OR \"public funds\" private school"
+    },
+    {
+      "label": "Hausa (Nigeria) 137",
+      "lang": "ha",
+      "standing": "press",
+      "hl": "ha",
+      "gl": "NG",
+      "ceid": "NG:ha",
+      "query": "\"academic freedom\" OR \"curriculum ban\" OR \"teaching restricted\""
+    },
+    {
+      "label": "Hausa (Nigeria) 138",
+      "lang": "ha",
+      "standing": "press",
+      "hl": "ha",
+      "gl": "NG",
+      "ceid": "NG:ha",
+      "query": "\"edtech contract\" OR \"school district contract\" OR procurement school"
+    }
+  ],
+  "events": [
+    {
+      "label": "UNESCO and global education governance",
+      "lang": "en",
+      "standing": "official",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "UNESCO education OR \"Global Education Monitoring Report\" OR \"Global Partnership for Education\""
+    },
+    {
+      "label": "OECD and PISA",
+      "lang": "en",
+      "standing": "official",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "PISA results OR \"PISA ranking\" OR OECD education report"
+    },
+    {
+      "label": "Ministry and inspectorate findings",
+      "lang": "en",
+      "standing": "official",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "\"ministry of education\" report OR Ofsted OR \"department for education\" figures OR inspectorate"
+    },
+    {
+      "label": "Court rulings on education",
+      "lang": "en",
+      "standing": "official",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "court ruling school OR education OR \"supreme court\" curriculum OR tuition"
+    },
+    {
+      "label": "Publisher mergers and market power",
+      "lang": "en",
+      "standing": "research",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "Pearson OR \"McGraw Hill\" OR \"Houghton Mifflin\" OR Cengage merger OR market OR contract"
+    },
+    {
+      "label": "Private equity owners",
+      "lang": "en",
+      "standing": "research",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "\"Apollo Global\" OR KKR OR Blackstone OR \"Veritas Capital\" education OR school OR university"
+    },
+    {
+      "label": "Platform and device contracts",
+      "lang": "en",
+      "standing": "research",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "\"Google Classroom\" OR Chromebook OR \"Microsoft 365\" school OR district contract"
+    },
+    {
+      "label": "Student data and surveillance",
+      "lang": "en",
+      "standing": "rights",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "\"student data\" breach OR \"facial recognition\" school OR proctoring OR \"biometric\" pupils"
+    },
+    {
+      "label": "Multistakeholderism and donors",
+      "lang": "en",
+      "standing": "research",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "multistakeholder education governance OR \"education fund\" donor influence OR philanthropy curriculum"
+    },
+    {
+      "label": "Assessment industry",
+      "lang": "en",
+      "standing": "research",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "\"exam board\" OR \"assessment contract\" OR NWEA OR \"test provider\" school"
+    },
+    {
+      "label": "Union action worldwide",
+      "lang": "en",
+      "standing": "rights",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "teachers strike OR \"education international\" OR \"academic staff\" strike OR walkout school"
+    },
+    {
+      "label": "Access and exclusion",
+      "lang": "en",
+      "standing": "rights",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "\"out of school\" children figures OR \"school exclusion\" disproportionate OR \"girls education\" barrier"
+    },
+    {
+      "label": "Corporate curriculum and sponsorship",
+      "lang": "en",
+      "standing": "rights",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "\"sponsored curriculum\" OR \"corporate sponsorship\" school OR \"industry partnership\" classroom"
+    },
+    {
+      "label": "Alternatives and student movements",
+      "lang": "en",
+      "standing": "rights",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "\"school strike\" students OR \"democratic school\" OR \"community school\" indigenous OR unschooling"
+    },
+    {
+      "label": "Diploma mills and predatory recruitment",
+      "lang": "en",
+      "standing": "official",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "\"diploma mill\" OR \"fake degree\" OR \"predatory college\" OR \"misled students\" investigation"
+    },
+    {
+      "label": "Endowments and research funding",
+      "lang": "en",
+      "standing": "research",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "query": "university endowment fossil fuel OR \"research funding\" arms OR \"conflict of interest\" university"
+    }
+  ]
+}
