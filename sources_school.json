@@ -2376,7 +2376,7 @@
    "gl": "TW",
    "ceid": "TW:zh-Hant",
    "theme": "privatisation",
-   "query": "学校 民营化 OR 民办学校 扩张"
+   "query": "學校 民營化 OR 民辦學校 擴張"
   },
   {
    "label": "中文 (台灣) · debt",
@@ -2386,7 +2386,7 @@
    "gl": "TW",
    "ceid": "TW:zh-Hant",
    "theme": "debt",
-   "query": "学生贷款 负担 OR 学费 上涨"
+   "query": "學生貸款 負擔 OR 學費 上漲"
   },
   {
    "label": "中文 (台灣) · testing",
@@ -2396,7 +2396,7 @@
    "gl": "TW",
    "ceid": "TW:zh-Hant",
    "theme": "testing",
-   "query": "标准化考试 批评 OR 应试压力 学生"
+   "query": "標準化考試 批評 OR 應試壓力 學生"
   },
   {
    "label": "中文 (台灣) · edtech",
@@ -2406,7 +2406,7 @@
    "gl": "TW",
    "ceid": "TW:zh-Hant",
    "theme": "edtech",
-   "query": "教育科技 数据收集 学校 OR 学生 监控 软件"
+   "query": "教育科技 資料收集 學校 OR 學生 監控 軟體"
   },
   {
    "label": "中文 (台灣) · teachers",
@@ -2416,7 +2416,7 @@
    "gl": "TW",
    "ceid": "TW:zh-Hant",
    "theme": "teachers",
-   "query": "教师短缺 罢工 OR 教师 薪酬 争议"
+   "query": "教師短缺 罷工 OR 教師 薪酬 爭議"
   },
   {
    "label": "中文 (台灣) · censorship",
@@ -2426,7 +2426,7 @@
    "gl": "TW",
    "ceid": "TW:zh-Hant",
    "theme": "censorship",
-   "query": "学校 禁书 OR 课程 审查"
+   "query": "學校 禁書 OR 課程 審查"
   },
   {
    "label": "中文 (台灣) · consolidation",
@@ -2436,7 +2436,7 @@
    "gl": "TW",
    "ceid": "TW:zh-Hant",
    "theme": "consolidation",
-   "query": "教育出版 合并 OR 教育科技 收购 反垄断"
+   "query": "教育出版 合併 OR 教育科技 收購 反壟斷"
   },
   {
    "label": "中文 (台灣) · elite",
@@ -2446,7 +2446,7 @@
    "gl": "TW",
    "ceid": "TW:zh-Hant",
    "theme": "elite",
-   "query": "精英大学 出身 高官 OR 名校垄断 领导层"
+   "query": "精英大學 出身 高官 OR 名校壟斷 領導層"
   },
   {
    "label": "中文 (台灣) · endowment",
@@ -2456,7 +2456,7 @@
    "gl": "TW",
    "ceid": "TW:zh-Hant",
    "theme": "endowment",
-   "query": "大学 化石燃料 投资 OR 撤资 运动 校园"
+   "query": "大學 化石燃料 投資 OR 撤資 運動 校園"
   },
   {
    "label": "中文 (台灣) · brand",
@@ -2466,7 +2466,7 @@
    "gl": "TW",
    "ceid": "TW:zh-Hant",
    "theme": "brand",
-   "query": "科技巨头 学校 免费设备 OR 教室 品牌 植入"
+   "query": "科技巨頭 學校 免費裝置 OR 教室 品牌 植入"
   },
   {
    "label": "中文 (台灣) · credential",
@@ -2476,7 +2476,7 @@
    "gl": "TW",
    "ceid": "TW:zh-Hant",
    "theme": "credential",
-   "query": "学历门槛 取消 OR 学历贬值 OR 毕业生 就业不足"
+   "query": "學歷門檻 取消 OR 學歷貶值 OR 畢業生 就業不足"
   },
   {
    "label": "中文 (台灣) · regcapture",
@@ -2486,7 +2486,7 @@
    "gl": "TW",
    "ceid": "TW:zh-Hant",
    "theme": "regcapture",
-   "query": "企业 课程 合作 教育部 OR 企业赞助 教材"
+   "query": "企業 課程 合作 教育部 OR 企業贊助 教材"
   },
   {
    "label": "中文 (香港) · privatisation",
@@ -2496,7 +2496,7 @@
    "gl": "HK",
    "ceid": "HK:zh-Hant",
    "theme": "privatisation",
-   "query": "学校 民营化 OR 民办学校 扩张"
+   "query": "學校 民營化 OR 民辦學校 擴張"
   },
   {
    "label": "中文 (香港) · debt",
@@ -2506,7 +2506,7 @@
    "gl": "HK",
    "ceid": "HK:zh-Hant",
    "theme": "debt",
-   "query": "学生贷款 负担 OR 学费 上涨"
+   "query": "學生貸款 負擔 OR 學費 上漲"
   },
   {
    "label": "中文 (香港) · testing",
@@ -2516,7 +2516,7 @@
    "gl": "HK",
    "ceid": "HK:zh-Hant",
    "theme": "testing",
-   "query": "标准化考试 批评 OR 应试压力 学生"
+   "query": "標準化考試 批評 OR 應試壓力 學生"
   },
   {
    "label": "中文 (香港) · edtech",
@@ -2526,7 +2526,7 @@
    "gl": "HK",
    "ceid": "HK:zh-Hant",
    "theme": "edtech",
-   "query": "教育科技 数据收集 学校 OR 学生 监控 软件"
+   "query": "教育科技 數據收集 學校 OR 學生 監控 軟件"
   },
   {
    "label": "中文 (香港) · teachers",
@@ -2536,7 +2536,7 @@
    "gl": "HK",
    "ceid": "HK:zh-Hant",
    "theme": "teachers",
-   "query": "教师短缺 罢工 OR 教师 薪酬 争议"
+   "query": "教師短缺 罷工 OR 教師 薪酬 爭議"
   },
   {
    "label": "中文 (香港) · censorship",
@@ -2546,7 +2546,7 @@
    "gl": "HK",
    "ceid": "HK:zh-Hant",
    "theme": "censorship",
-   "query": "学校 禁书 OR 课程 审查"
+   "query": "學校 禁書 OR 課程 審查"
   },
   {
    "label": "中文 (香港) · consolidation",
@@ -2556,7 +2556,7 @@
    "gl": "HK",
    "ceid": "HK:zh-Hant",
    "theme": "consolidation",
-   "query": "教育出版 合并 OR 教育科技 收购 反垄断"
+   "query": "教育出版 合併 OR 教育科技 收購 反壟斷"
   },
   {
    "label": "中文 (香港) · elite",
@@ -2566,7 +2566,7 @@
    "gl": "HK",
    "ceid": "HK:zh-Hant",
    "theme": "elite",
-   "query": "精英大学 出身 高官 OR 名校垄断 领导层"
+   "query": "精英大學 出身 高官 OR 名校壟斷 領導層"
   },
   {
    "label": "中文 (香港) · endowment",
@@ -2576,7 +2576,7 @@
    "gl": "HK",
    "ceid": "HK:zh-Hant",
    "theme": "endowment",
-   "query": "大学 化石燃料 投资 OR 撤资 运动 校园"
+   "query": "大學 化石燃料 投資 OR 撤資 運動 校園"
   },
   {
    "label": "中文 (香港) · brand",
@@ -2586,7 +2586,7 @@
    "gl": "HK",
    "ceid": "HK:zh-Hant",
    "theme": "brand",
-   "query": "科技巨头 学校 免费设备 OR 教室 品牌 植入"
+   "query": "科技巨頭 學校 免費設備 OR 教室 品牌 植入"
   },
   {
    "label": "中文 (香港) · credential",
@@ -2596,7 +2596,7 @@
    "gl": "HK",
    "ceid": "HK:zh-Hant",
    "theme": "credential",
-   "query": "学历门槛 取消 OR 学历贬值 OR 毕业生 就业不足"
+   "query": "學歷門檻 取消 OR 學歷貶值 OR 畢業生 就業不足"
   },
   {
    "label": "中文 (香港) · regcapture",
@@ -2606,7 +2606,7 @@
    "gl": "HK",
    "ceid": "HK:zh-Hant",
    "theme": "regcapture",
-   "query": "企业 课程 合作 教育部 OR 企业赞助 教材"
+   "query": "企業 課程 合作 教育部 OR 企業贊助 教材"
   },
   {
    "label": "हिन्दी · privatisation",
@@ -2786,7 +2786,7 @@
    "gl": "TW",
    "ceid": "TW:zh-Hant",
    "theme": "factory",
-   "query": "工厂化 学校 模式 OR 义务教育 起源 工厂 工人"
+   "query": "工廠化 學校 模式 OR 義務教育 起源 工廠 工人"
   },
   {
    "label": "English (US) · platform",
@@ -2876,7 +2876,7 @@
    "gl": "TW",
    "ceid": "TW:zh-Hant",
    "theme": "platform",
-   "query": "数字教材 使用期限 OR 开放教育资源 推广"
+   "query": "數字教材 使用期限 OR 開放教育資源 推廣"
   }
  ],
  "events": [
